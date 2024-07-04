@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- The meta charset tag sets the character encoding of the page to UTF-8.
+        This ensures that special characters and symbols are correctly interpreted and displayed in the browser.
+        UTF-8 is a universally supported character encoding, capable of representing most characters in all languages. -->
+        <meta charset="UTF-8">
+        <!-- The title of my page: -->
+        <title>inscription</title>
+        <!-- All the lien's files I need for my inscription.html: .css .js -->
+        <link rel="stylesheet" href="../Css_File/inscription.css"/>
+        <link href="../Css_File/header.css" rel="stylesheet"/>
+        <script src="../JavaScript_File/inscription.js" defer></script>
+    </head>
+    <body>
+        <!-- Insertion my logo also it's a lien bers my index page -->
+        <a href="index.html"><img src="../logo.png" alt="logo" class="logo"></a>
+        <!-- Creation my form for the client's inscription -->
+        <form>
+            <table>
+                <caption>Welcome!</caption>
+                <tr>
+                    <td><label>Enter your first name:</label></td>
+                    <td><input type="text" name="nom" placeholder="First name"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter your second name:</label></td>
+                    <td><input type="text" name="prenom" placeholder="second name"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter your phone number:</label></td>
+                    <td><input type="tel" name="numero" placeholder="Phone number"></td>
+                </tr>
+                <tr>
+                    <td><label>Enter your email:</label></td>
+                    <td><input type="email" name="email" placeholder="email@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><label>Entrer your password:</label></td>
+                    <td><input type="password" name="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td><label>Re-enter your password:</label></td>
+                    <td><input type="password" name="password-confirmation" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Register</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

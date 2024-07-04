@@ -1,0 +1,273 @@
+/* style for all page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo{
+    max-width: 200px;/*width of my logo*/
+}
+body{
+    background-color: #E1F7F5;
+    overflow-y: auto;
+}
+header{
+    display: flex;
+    background-color: rgb(141, 163, 163);
+    height: 200px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    justify-content: space-between;/* Distributes items evenly with space between them */
+    align-items: center;/* Centers items vertically within the container */
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.sections{
+    opacity: 0;/* Sets the opacity of the element to 0 */
+    visibility: hidden;/* Sets element visibility to hidden */
+    position: absolute;
+    top: 32px;
+    left: 0;
+    transition: opacity 200ms ease-in-out;/* Smooth transition effect for opacity property */
+}
+.Section1:hover .sections, .Section2:hover .sections, .Section3:hover .sections, .Section4:hover .sections{
+    visibility: visible;/* Makes the element visible */
+    opacity: 1;/* Sets the opacity of the element to 1 */
+}
+.Section1, .Section2, .Section3, .Section4{
+    position: relative;
+}
+.p11, .a11, .p12, .a12, .p13, .a13, .p14, .a14{
+    display: block;
+	margin: 0;
+	padding: .5em 1.5em;
+	font-size: inherit;
+	color: black;
+	/* background-color: #9AC8CD; */
+	text-decoration: none;
+    font-family: serif;
+	/* box-sizing: border-box;
+    border-radius: 50%;
+	width: 6em;
+    height: 2em; */
+}
+.a11, .a12, .a13, .a14{
+	width: 10em;
+    height: 2.3em;
+}
+.Section1:hover .sections{
+    color: white;
+    background-color: rgb(156, 201, 212);
+    border-top: 4px solid rgb(211, 198, 198);
+}
+.Section1:hover p, .Section2:hover p, .Section3:hover p, .Section4:hover p{
+    color: white;
+	background-color: steelblue;
+    margin-left: 15px;
+}
+/* .a11:hover, .a12:hover, .a13:hover, .a14:hover{
+    color: white;
+	background-color: skyblue;
+} */
+.b1{
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    background: transparent;
+    font-size: 1em;
+    font-family: serif;
+    font-style: italic;
+    margin-left: 3px;
+}
+.b1:hover{
+    background-color: white;
+}
+.a1, .a2{
+    text-decoration: none;
+    color: black;
+}
+.li1{
+    list-style: none;
+}
+footer{
+    display: flex;
+    background-color: rgb(141, 163, 163);
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.logofoo{
+    width: 100px;
+    height: 100px;
+}
+table{
+    width: 100%;
+    height: 100px;
+}
+.td1{
+    width: 150px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: serif;
+    font-style: italic;
+    transition: font-size 0.75s ease;
+}
+.td2{
+    width: 150px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: serif;
+    font-style: italic;
+    transition: font-size 0.75s ease;
+}
+.td3{
+    width: 150px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: serif;
+    font-style: italic;
+    transition: font-size 0.75s ease;
+}
+.td1:hover, .td2:hover, .td3:hover{
+    font-size: 30px;
+    color: white;
+    background-color: #9AC8CD;
+}
+.i1, .i2, .i3, .i4, .i5{
+    width: 40px;
+    justify-content: space-between;
+    transition: width 0.75s ease;
+}
+.i1:hover, .i2:hover, .i3:hover, .i4:hover, .i5:hover{
+    width: 60px;
+}
+.a2{
+    text-decoration: none;
+}
+.section-para {
+    left: 235px;
+    top: 120px;
+    width: 80%; /* section's width */
+    padding: 20px;
+    position: absolute;
+    background-color: #02414d;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+.section-para {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #405b61;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    overflow: hidden;
+  }
+  
+  .titre {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 20px;
+    background-color: #9AC8CD;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .paragraphe {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Transformation effect and shadow on hover */
+  .section-para:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 30px 20px #32818a;
+  }
+  
+  /* Transition effect on the paragraph */
+  .paragraphe:hover {
+    color: white; /* Color change on hover */
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    top: 580px;
+    left: -10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer; /* Ajout pour montrer qu'il y a une interaction */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1; /* Change to display the overlay by default. */
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.overlay h2 {
+    color: white;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.answer {
+    display: none; /* Hide the default response */
+}
+
+.image:hover .overlay {
+    opacity: 1;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px;
+}
+
+.image:hover .overlay h2 {
+    display: none; /* Hide the question on hover. */
+}
+
+.image:hover .overlay .answer {
+    display: block; /* Display the response on hover. */
+}
+.image:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 30px 20px #32818a;
+}

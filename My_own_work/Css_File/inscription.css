@@ -1,0 +1,75 @@
+/* style for all page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo{
+    max-width: 200px; /*width of my logo*/
+}
+body{
+    background-color: #E1F7F5; /*background color of my body*/
+    overflow-y: auto;
+}
+caption{
+    color: #35374B;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    width: 50%;
+    border: 4px solid #35374B; /*la taille style and color of the border*/
+    border-radius: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -220%);/*Adjusts element's vertical and horizontal position, relative to its center.*/
+}
+caption:hover{
+    color: white;
+    background-color: rgb(141, 163, 163);
+}
+table{
+    background-color:rgb(141, 163, 163);
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 450px;
+    border: 4px solid #35374B;
+    border-radius: 20px;
+    border-spacing: 10px;
+}
+label{
+    font-size: 23px;
+    font-family: shrikhand;
+    font-style: italic;
+    color: black;
+}
+input{
+    border-radius: 8px;
+    border: 3px solid #35374B;
+    width: 180px;
+    height: 26px;
+}
+input:hover{/*Hover in CSS: Styling changes when mouse hovers over an element.*/
+    background-color: rgb(141, 163, 163);
+}
+::placeholder{
+    color: black;
+    font-family: shrikhand;
+    font-style: italic;
+    font-size: 17px;
+}
+body > form table tr td button{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    width: 60%;
+    color: white;
+    background-color: rgb(141, 163, 163);
+    border: 3px solid #35374B;
+    border-radius: 20px;
+}
+body > form table tr td button:hover{
+    color: #35374B;
+    background-color: #E1F7F5;
+}
